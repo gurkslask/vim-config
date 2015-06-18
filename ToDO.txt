@@ -17,3 +17,14 @@ För att göra jj till escape och ändra timeouten
 
 Use repeat operator with a visual selection:
 	vnoremap . :normal .<cr>
+
+Plugins:
+	Pathogen
+	Gundo
+	syntastic
+	nerdtree
+	powerline
+	jedi
+	Fugitive
+	git-gutter
+
