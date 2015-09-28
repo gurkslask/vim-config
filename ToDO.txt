@@ -28,3 +28,15 @@ Plugins:
 	Fugitive
 	git-gutter
 
+Install: pathogen
+    mkdir -p ~/.vim/autoload ~/.vim/bundle
+    curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+add "execute pathogen#infect()" to .vimrc
+later install all plugins under ~./.vim/bundle
+
+nerdtree: https://github.com/scrooloose/nerdtree.git
+gundo: https://github.com/sjl/gundo.vim.git
+syntastic: https://github.com/scrooloose/syntastic.git
+powerline: https://github.com/powerline/powerline.git
+jedi: https://github.com/davidhalter/jedi-vim.git
