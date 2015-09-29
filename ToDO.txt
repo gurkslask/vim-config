@@ -12,9 +12,9 @@ För python indentering:
 	set expandtab       " Expand TABs to spaces
 
 För att göra jj till escape och ändra timeouten
-	:inoremap jj <Esc>
-	:set timeoutlen=50set tabstop=4
-
+	inoremap jj <Esc>
+	set timeoutlen=50
+	set tabstop=4
 Use repeat operator with a visual selection:
 	vnoremap . :normal .<cr>
 
