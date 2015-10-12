@@ -18,6 +18,9 @@ För att göra jj till escape och ändra timeouten
 Use repeat operator with a visual selection:
 	vnoremap . :normal .<cr>
 
+        colorscheme badwolf         " awesome colorscheme
+        syntax enable           " enable syntax processing
+
 Plugins:
 	Pathogen
 	Gundo
@@ -40,3 +43,5 @@ gundo: https://github.com/sjl/gundo.vim.git
 syntastic: https://github.com/scrooloose/syntastic.git
 powerline: https://github.com/powerline/powerline.git
 jedi: https://github.com/davidhalter/jedi-vim.git
+
+badwolf colorscheme: https://github.com/sjl/badwolf.git
