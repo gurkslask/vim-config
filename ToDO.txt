@@ -30,6 +30,7 @@ Plugins:
 	jedi
 	Fugitive
 	git-gutter
+    neocomplete
 
 Install: pathogen
     mkdir -p ~/.vim/autoload ~/.vim/bundle
@@ -43,5 +44,6 @@ gundo: https://github.com/sjl/gundo.vim.git
 syntastic: https://github.com/scrooloose/syntastic.git
 powerline: https://github.com/powerline/powerline.git
 jedi: https://github.com/davidhalter/jedi-vim.git
+neocomplete: https://github.com/Shougo/neocomplete.vim.git
 
 badwolf colorscheme: https://github.com/sjl/badwolf.git
