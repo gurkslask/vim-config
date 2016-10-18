@@ -64,3 +64,21 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
   "   " Close popup by <Space>.
   "   "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
+  "
+  "   Automaticly append closing )
+inoremap ( ()<Left>
+inoremap (<CR> (<CR>)<Esc>O
+inoremap (( (
+inoremap () ()
+inoremap [ []<Left>
+inoremap [<CR> [<CR>]<Esc>O
+inoremap [[ [
+inoremap [] []
+inoremap { {}<Left>
+inoremap {<CR> {<CR>}<Esc>O
+inoremap {{ {
+inoremap {} {}
+inoremap < <><Left>
+inoremap <<CR> <<CR>><Esc>O
+inoremap << <
+inoremap <> <>
