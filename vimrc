@@ -82,3 +82,5 @@ inoremap < <><Left>
 inoremap <<CR> <<CR>><Esc>O
 inoremap << <
 inoremap <> <>
+
+set path+=**
