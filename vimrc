@@ -18,8 +18,8 @@ set showmatch               " highlight matchin [{()}]
 set incsearch               " search as characters are entered
 set hlsearch                " highlight matches
 " Turn off search highlight
-nnoremap <leader><space> :nohlsearch<CR> 
 let mapleader=","           " leader is comma
+nnoremap <leader><space> :nohlsearch<CR> 
 inoremap jj <Esc>
 
 " toggle gundo
