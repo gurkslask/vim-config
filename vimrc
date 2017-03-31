@@ -87,3 +87,5 @@ inoremap << <
 inoremap <> <>
 
 set path+=**
+
+nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr> " " Run py files
