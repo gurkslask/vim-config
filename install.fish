@@ -12,3 +12,4 @@ git clone git://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 
 git clone https://github.com/sjl/badwolf.git ~/.vim/colors/badwolf
 cp ~/.vim/colors/badwolf/colors ~/.vim/colors/ -r
+git clone https://github.com/SirVer/ultisnips.git ~/,vim/bundle/ultisnips
