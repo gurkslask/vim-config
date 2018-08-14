@@ -88,6 +88,10 @@ inoremap <> <>
 
 set path+=**
 
+<<<<<<< HEAD
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+=======
+nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr> " " Run py files
+>>>>>>> 449b5f2c76aaa787fb8f484e15752c38ad4d0cda
