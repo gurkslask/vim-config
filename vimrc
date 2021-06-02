@@ -1,4 +1,4 @@
-execute pathogen#infect()
+" execute pathogen#infect()
 syntax on
 filetype indent plugin on
 set modeline
@@ -36,21 +36,21 @@ au FileType go nmap gd <Plug>(go-def-tab)
 
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 "" Disable AutoComplPop.
-let g:acp_enableAtStartup = 0
+ "let g:acp_enableAtStartup = 0
 " Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
+ "let g:neocomplete#enable_at_startup = 1
 " " Use smartcase.
-let g:neocomplete#enable_smart_case = 1
+ "let g:neocomplete#enable_smart_case = 1
 " " Set minimum syntax keyword length.
-let g:neocomplete#sources#syntax#min_keyword_length = 3
-let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
+ "let g:neocomplete#sources#syntax#min_keyword_length = 3
+ "let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " python3 syntastic
 let g:syntastic_python_python_exec = '/usr/bin/python3'
 
 " Plugin key-mappings.
-inoremap <expr><C-g>     neocomplete#undo_completion()
-inoremap <expr><C-l>     neocomplete#complete_common_string()
+" inoremap <expr><C-g>     neocomplete#undo_completion()
+" inoremap <expr><C-l>     neocomplete#complete_common_string()
 "
 " " Recommended key-mappings.
 " " <CR>: close popup and save indent.
@@ -63,8 +63,8 @@ endfunction
   "   " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
   "   " <C-h>, <BS>: close popup and delete backword char.
-inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
-inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
+"inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
+"inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
   "   " Close popup by <Space>.
   "   "inoremap <expr><Space> pumvisible() ? "\<C-y>" : "\<Space>"
   "
@@ -88,10 +88,13 @@ inoremap <> <>
 
 set path+=**
 
-<<<<<<< HEAD
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-=======
-nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr> " " Run py files
->>>>>>> 449b5f2c76aaa787fb8f484e15752c38ad4d0cda
+"let g:UltiSnipsExpandTrigger="<c-j>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" custom definition completion regex
+autocmd Filetype python let &l:define = '^\s*\(async\s\)\?def'
+" " custom include completion regex
+autocmd Filetype python let &l:include = '^\s*import'
+" " set python path as vim path
+autocmd Filetype python let &l:path = execute('python3 import sys, vim; print(".,**,"+"".join(","+x for x in sys.path))')
